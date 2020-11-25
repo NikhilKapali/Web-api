@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<Html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		nav {
+			background-image: url(images/gradient2.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+		}
+	</style>
+
+
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="css/bootstrap-reboot.css" type="text/css" rel="stylesheet" />
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+	<script src="js/popper.min.js"></script>
+	<script type='text/javascript' src="js/jquery.min.js"></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+
+	<script type='text/javascript' src='login.js'></script>
+
+	<title>Online Bakery Cafe & Shop</title>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light">
+		<a class="navbar-brand col-md-9" href="dashboard.html">
+			<img src="images/bakerycafelogo.png" alt="Logo" height="120px" width="100px"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<form class="form-inline my-2 my-lg-0">
+				<a class="btn btn-outline-dark mr-sm-3 p-3" href="register.html">
+					<font size="4">Register</font>
+				</a>
+				<a class="btn btn-outline-dark my-2 my-sm-0 p-3" href="dashboard.html">
+					<font size="4">Home Page</font>
+				</a>
+			</form>
+		</div>
+	</nav>
+	<!-- End of nav-bar -->
+
+	<div class="contentdas">
+		<div class="container">
+			<div class="row justify-content-center p-3">
+				<div class="col-12 col-md-8 col-lg-8 col-xl-6 p-3 card">
+					<form class="form">
+
+						<div class="alert bg-secondary text-white text-center center-block">
+							<h2>Login Here!!</h2>
+						</div>
+
+						<img id="profile-img" class="profile-img-card" height="150px" src="images/user-image.png" />
+						<p id="profile-name" class="profile-name-card"></p>
+
+						<span id="reauth-email" class="reauth-email display-5"></span>
+						<label>Email ID:</label>
+						<input type="text" id="Email" class="form-control" name="Email" placeholder="Email ID" required
+							autofocus>
+						<label>Password:</label>
+						<input type="password" id="Password" class="form-control" name="password" placeholder="Password"
+							required>
+						<div class="text-center p-3">
+							<button id="loginUser" class="btn btn-lg btn-primary btn-signin" type=Submit
+								value="Submit">Login</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-container p-4 text-center center-block w3-light-grey w3-xlarge">
+		<i class="w3-hover-opacity"><a href="http://facebook.com"><img src="images/logo_fb_png.png" height="40px"
+					width="40px" alt="facebook" /></a></i>
+		<i class="w3-hover-opacity"><a href="http://instagram.com"><img src="images/insta.png" height="40px"
+					width="40px" alt="instagram" /></a></i>
+		<i class="w3-hover-opacity"><a href="http://twitter.com"><img src="images/Twitterbird.png" height="40px"
+					width="40px" alt="twitter" /></a></i>
+		<br />
+		<a>
+			<font size="3">nikhilkapali12@gmail.com</font>
+		</a><br />
+		<a>
+			<font size="2">&copy;Online Bakery Cafe & Shop</font>
+		</a>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <title>Client Update Form</title>
+
+  <style>
+    nav {
+      background-image: url(../images/gradient3.png);
+      background-repeat: no-repeat;
+      background-blend-mode: luminosity;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    body {
+      background-image: url(../images/2nd.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: luminosity;
+      background-attachment: fixed;
+    }
+  </style>
+
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <script src="../js/popper.min.js"></script>
+  <script type='text/javascript' src="../js/jquery.min.js"></script>
+  <script type='text/javascript' src='../js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='js/updateprofile.js'></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="home.html">Bakery Cafe & Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="menu.html">Our Menu</a>
+            <a class="dropdown-item" href="bookTable.html">View Empty Tables </a>
+            <a class="dropdown-item" href="viewReview.html">Reviews</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="updateprofile.html">Update Your Profile <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button id="logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">LogOut</button>
+        <div id="username"></div>
+      </form>
+    </div>
+  </nav>
+  <!-- End of nav-bar -->
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+          <div class="row">
+            <div class="col text-center text-danger">
+              <h1>Profile</h1>
+
+            </div>
+          </div>
+          <form class="form">
+            <div class="text-primary text-center center-block">
+              <label class="alert bg-secondary text-white">
+                <h2>Update Form</h2>
+              </label>
+            </div>
+            <fieldset>
+              <input type="text" id="ID_user" class="form-control" name="ID" hidden>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">Choose Profile Picture:</font>
+              </label><br />
+              <input class="btn btn-primary btn-lg" class="form-control" type="file" name="profilePicture"
+                id="profilePicture" /><br />
+              <label id="showImage"></label><br />
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">First Name:</font>
+              </label>
+              <input type="text" id="FirstName" class="form-control" name="firstname" required autofocus>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">Last Name:</font>
+              </label>
+              <input type="text" id="LastName" class="form-control" name="lastname" required autofocus>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">Address:</font>
+              </label>
+              <input type="text" id="Address" class="form-control" name="address" required autofocus>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">Phone Number:</font>
+              </label>
+              <input type="text" id="PhNumber" class="form-control" name="phone" required autofocus>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">Email Id:</font>
+              </label>
+              <input type="email" id="Email" class="form-control" name="email" required autofocus>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">User-type:</font>
+              </label>
+              <input type="text" id="Usertype" class="form-control" name="username" value="User" readonly>
+            </fieldset>
+            <fieldset>
+              <label>
+                <font size="5" class="text-light">Password:</font>
+              </label>
+              <input type="password" id="Password" class="form-control" name="password" required autofocus>
+            </fieldset>
+            <br />
+            <div class="text-center">
+              <button id="update_profile" class="btn btn-lg btn-primary" type=Submit value="Submit">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

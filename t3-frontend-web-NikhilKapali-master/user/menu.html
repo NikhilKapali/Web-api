@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <script src="../js/popper.min.js"></script>
+  <script type='text/javascript' src="../js/jquery.min.js"></script>
+  <script type='text/javascript' src='../js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='js/menu.js'></script>
+
+  <style>
+    nav {
+      background-image: url(../images/gradient3.png);
+      background-repeat: no-repeat;
+      background-blend-mode: luminosity;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    body {
+      background-image: url(../images/coffee-pancakes.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: luminosity;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="home.html">Bakery Cafe & Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item active" href="menu.html">Our Menu <span class="sr-only">(current)</span></a>
+            <a class="dropdown-item" href="bookTable.html">View Empty Tables </a>
+            <a class="dropdown-item" href="viewReview.html">Reviews</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="updateprofile.html">Update Your Profile</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button id="logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">LogOut</button>
+        <div id="username"></div>
+      </form>
+    </div>
+  </nav>
+  <!-- End of nav-bar -->
+
+  <div class="upcoming py-4">
+    <div class="container">
+      <div class="row pb-4 text-center">
+        <div class="col-md-12 text-danger">
+          <h2>Want to Order Something?</h2>
+        </div>
+      </div>
+      <div id="showDish" class="row text-center">
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

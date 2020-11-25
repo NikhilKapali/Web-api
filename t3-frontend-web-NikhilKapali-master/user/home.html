@@ -1,0 +1,203 @@
+<html>
+
+<head>
+  <title>Client Home Page</title>
+
+  <style>
+    nav {
+      background-image: url(../images/gradient3.png);
+      background-repeat: no-repeat;
+      background-blend-mode: luminosity;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    #sectionOne {
+      background-image: url(../images/Coffee-photo-1.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <script src="../js/popper.min.js"></script>
+  <script type='text/javascript' src="../js/jquery.min.js"></script>
+  <script type='text/javascript' src='../js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='js/home.js'></script>
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="home.html">Bakery Cafe & Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="menu.html">Our Menu</a>
+            <a class="dropdown-item" href="bookTable.html">View Empty Tables </a>
+            <a class="dropdown-item" href="viewReview.html">Reviews</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="updateprofile.html">Update Your Profile</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button id="logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">LogOut</button>
+        <div id="username"></div>
+      </form>
+    </div>
+  </nav>
+  <!-- End of nav-bar -->
+
+
+  <section class="d-md-flex jumbotron" id="sectionOne">
+    <div class="upcoming py-5 col-md-12">
+      <div class="container">
+        <div class="row pb-4 text-center text-info">
+          <div class="col-md-12">
+            <h2>Check out our Popular Dish</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3 box border py-4">
+            <div class="box-image">
+              <img src="../images/coffee-pancakes.jpg" height="180px" width="220px" alt="coffee-pancakes">
+            </div>
+            <div class="box-title text-light">
+              <h4> Coffee and Pancakes</h4>
+            </div>
+            <div class="box-price">
+
+            </div>
+            <button type="button" class="btn btn-danger" onclick="location.href='menu.html'">Check out this
+              Dish</button>
+          </div>
+          <div class="col-md-3 box border py-4">
+            <div class="box-image">
+              <img src="../images/sandwich.jpg" height="180px" width="220px" alt="Sandwich">
+            </div>
+            <div class="box-title text-light">
+              <h4> European Sandwich</h4>
+            </div>
+            <div class="box-price">
+
+            </div>
+            <button type="button" class="btn btn-danger" onclick="location.href='menu.html'">Check out this
+              Dish</button>
+          </div>
+          <div class="col-md-3 box border py-4">
+            <div class="box-image">
+              <img src="../images/chicken.jpg" height="180px" width="220px" alt="chicken">
+            </div>
+            <div class="box-title text-light">
+              <h4> Deep Fried Chicken</h4>
+            </div>
+            <div class="box-price">
+
+            </div>
+            <button type="button" class="btn btn-danger" onclick="location.href='menu.html'">Check out this
+              Dish</button>
+          </div>
+          <div class="col-md-3 box border py-4">
+            <div class="box-image">
+              <img src="../images/cake.jpg" height="180px" width="220px" alt="cake">
+            </div>
+            <div class="box-title text-light">
+              <h4>Pastry and Sweets</h4>
+            </div>
+            <div class="box-price">
+
+            </div>
+            <button type="button" class="btn btn-danger" onclick="location.href='menu.html'">Check out this
+              Dish</button>
+          </div>
+        </div>
+        <div class="row text-center pt-4">
+          <div class="col-md-12">
+            <button type="button" class="btn btn-danger" onclick="location.href='menu.html'">View Our Menu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-md-flex jumbotron alert-danger">
+    <div class="col-sm-12">
+      <div class="container-fluid bg-2 text-center">
+        <div class="heading-section">
+          <h1 class="mb-4">Our Story</h1>
+        </div>
+        <p>In 1999, we started off as the first specialty coffee shop in Nepal to specialize in handcrafted
+          coffee and bakery. Over the years, we have diversified from a small coffee shop to an international
+          franchising Nepalese Coffee Brand with more than 30 outlets around the world. Coffee plantation is
+          still a new adventure in Nepal. In 1938 AD, a hermit Mr Hira Giri had brought some seeds of Coffee
+          from Sindu Province of Myanmar (the then Burma) and had planted in Aapchaur of Gulmi District for the
+          first time in Nepal. The crop remained unnoticed as a curiosity crop until 1970s. Then it spread from
+          one farmer to another as a curiosity plant for about 4 decades.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="d-md-flex jumbotron alert-warning">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="media d-block text-center block-6 services">
+            <div class="d-flex justify-content-center align-items-center mb-5 text-success">
+              <h3 class="heading">Easy to Order</h3>
+            </div>
+            <div class="media-body">
+              <p>Now with the help of this site you can order food with a only a few clicks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5 text-info">
+              <h3 class="heading">Fastest Delivery</h3>
+            </div>
+            <div class="media-body">
+              <p>Recive the food you ordered only within 20 minutes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="media d-block text-center block-6 services">
+            <div class="icon d-flex justify-content-center align-items-center mb-5 text-danger">
+              <h3 class="heading">Quality Coffee</h3>
+            </div>
+            <div class="media-body">
+              <p>Enjoy a cup of COFFEE with the finest beens rosted for perfection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

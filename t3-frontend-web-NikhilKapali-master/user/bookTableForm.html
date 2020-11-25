@@ -1,0 +1,153 @@
+<html>
+
+<head>
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <script src="../js/popper.min.js"></script>
+  <script type='text/javascript' src="../js/jquery.min.js"></script>
+  <script type='text/javascript' src='../js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='js/bookTableForm.js'></script>
+  <style>
+    nav {
+      background-image: url(../images/gradient3.png);
+      background-repeat: no-repeat;
+      background-blend-mode: luminosity;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    body {
+      background-image: url(../images/coffeeCrowd.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: luminosity;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="home.html">Bakery Cafe & Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="menu.html">Our Menu</a>
+            <a class="dropdown-item active" href="bookTable.html">View Empty Tables <span
+                class="sr-only">(current)</span></a>
+            <a class="dropdown-item" href="viewReview.html">Reviews</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="updateprofile.html">Update Your Profile</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button id="logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">LogOut</button>
+        <div id="username"></div>
+      </form>
+    </div>
+  </nav>
+  <!-- End of nav-bar -->
+
+  <div class="container-wrap">
+    <div class="wrap d-md-flex align-items-xl-end">
+      <div class="book p-4 text-center col-md-12 d-flex container-fluid">
+        <form method="POST" class="appointment-form col-md-5">
+          <label class="alert bg-secondary text-white">
+            <h2>Reserve This Table</h2>
+          </label>
+          <div class="d-md-flex">
+            <div class="form-group ml-md-5">
+              <input type="text" id="FirstName" name="FirstName" class="form-control" readonly>
+            </div>
+            <div class="form-group ml-md-5">
+              <input type="text" id="LastName" name="LastName" class="form-control" readonly>
+            </div>
+          </div>
+          <div class="d-md-flex">
+            <div class="form-group ml-md-5">
+              <div class="input-wrap">
+                <input type="text" id="tableName" class="form-control" readonly>
+              </div>
+            </div>
+            <div class="form-group ml-md-5">
+              <div class="input-wrap">
+                <input type="text" id="Price" name="Price" class="form-control" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="d-md-flex">
+            <div class="form-group ml-md-5">
+              <div class="input-wrap">
+                <input type="text" id="Category" name="Category" class="form-control" readonly>
+              </div>
+            </div>
+            <div class="form-group ml-md-5">
+              <div class="input-wrap">
+                <input type="time" id="Time" name="Time" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="d-md-flex">
+            <div class="form-group ml-md-5">
+              <div class="input-wrap">
+                <input name="Date" id="DateTable" type="date" class="form-control"
+                  placeholder="Date for the reservation">
+              </div>
+            </div>
+            <div class="form-group ml-md-5">
+              <div class="input-wrap">
+                <input type="text" id="Email" name="Email" class="form-control" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="d-md-flex">
+            <div class="form-group ml-md-5">
+              <textarea name="Message" id="Message" cols="55" rows="2" class="form-control"
+                placeholder="Want to say something about this table? Add a Review or Comment"></textarea>
+            </div>
+          </div>
+
+          <div class="d-md-flex">
+            <div class="form-group ml-md-5">
+              <input id="bookTableForm" type="submit" value="Confirm Reservation"
+                class="py-3 px-4 btn btn-primary btn-lg">
+            </div>
+          </div>
+
+        </form>
+        <div class="row table-responsive-md p-5">
+          <div class="box-image" id="tableImageName">
+
+          </div>
+          <div class="box-title text-light">
+            <h4>Take Your Time and pick the most suitable table for you.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
